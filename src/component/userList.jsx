@@ -31,9 +31,9 @@ class UserList extends React.Component {
     if (loading) {
       return <div className="section">
           <div className="container">
-            <div className="columns is-centered">
+            <div className="columns is-centered is-vcentered">
               <div className="colomn">
-                Loading...
+                <p>Loading...</p>
               </div>
             </div>
           </div>
@@ -43,9 +43,9 @@ class UserList extends React.Component {
     if (error) {
       return <div className="section">
       <div className="container">
-        <div className="columns is-centered">
+        <div className="columns is-centered is-vcentered">
           <div className="colomn">
-           Error: {error.message}
+            <h1>Error: {error.message}</h1>
           </div>
         </div>
       </div>
