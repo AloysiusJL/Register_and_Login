@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Aloysius",
+      "email": "Aloysius@mail.com",
+      "password": "Aloysius123!"
+    },
+    {
+      "id": 2,
+      "name": "Kofi Annan",
+      "email": "KofiAnnan@mail.com",
+      "password": "kof1Annan!"
+    },
+    {
+      "id": 3,
+      "name": "Mahatma Gandhi",
+      "email": "Mahatma-Gandhi@mail.com",
+      "password": "mahatma_g4ndhi!"
+    },
+    {
+      "id": 4,
+      "name": "Elon Musk",
+      "email": "elonMusk@mail.com",
+      "password": "5paceX!"
+    },
+    {
+      "name": "Soekarno",
+      "email": "soekarnaRI@mail.com",
+      "password": "Merdeka17agustus!",
+      "id": 5
+    }
+  ]
+}
