@@ -29,38 +29,58 @@ class UserList extends React.Component {
     const { users, loading, error } = this.state
 
     if (loading) {
-      return <div>Loading...</div>
+      return <div className="section">
+          <div className="container">
+            <div className="columns is-centered">
+              <div className="colomn">
+                Loading...
+              </div>
+            </div>
+          </div>
+        </div>
     }
 
     if (error) {
-      return <div>Error: {error.message}</div>
+      return <div className="section">
+      <div className="container">
+        <div className="columns is-centered">
+          <div className="colomn">
+           Error: {error.message}
+          </div>
+        </div>
+      </div>
+    </div>
     }
 
     return (
-      <div className="columns is-centered">
-        <div className="column is-half">
-          <div className="card">
-            <table className="table is-striped is-hoverable">
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Password</th>
-                </tr>
-              </thead>
-              <tbody>
-                {users.map((user) => (
-                  <tr key={user.id}>
-                    <td>{user.id}</td>
-                    <td>{user.name}</td>
-                    <td>{user.email}</td>
-                    <td>{user.password}</td>
+      <div className="section">
+        <div className="container">
+          <div className="columns is-centered">
+          <div className="column is-half">
+            <div className="card">
+              <table className="table is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {users.map((user) => (
+                    <tr key={user.id}>
+                      <td>{user.id}</td>
+                      <td>{user.name}</td>
+                      <td>{user.email}</td>
+                      <td>{user.password}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
+        </div>
         </div>
       </div>
     )
